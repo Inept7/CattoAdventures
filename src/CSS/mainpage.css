@@ -1,0 +1,23 @@
+
+
+
+.MainPage {
+    height: 100vh;
+    width: 100vh;
+    background-color: black;
+    padding: 0;
+    margin: auto;
+}
+
+#renderDiv {
+    font-size: 200%;
+    
+}
+
+.renderMainRow {
+    background-color: rgb(49, 49, 49);
+}
+
+.renderMainCol {
+    width: auto;
+}

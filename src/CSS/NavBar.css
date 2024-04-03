@@ -1,0 +1,33 @@
+#NavBarDiv {
+    display: inline;
+    background-color: aqua;
+    border-color: aliceblue;
+    border-width: 2px;
+    font-size: large;
+}
+
+#NavItem1 {
+background-color: rgb(162, 170, 167);
+padding:0;
+width: 200px;
+/* color: rgb(178, 211, 44); */
+display: block;
+}
+
+#NavItem2 {
+color: rgb(26, 155, 50);
+width: 200px;
+margin: auto;
+display: block;
+}
+
+#NavItem3 {
+color: blue;
+margin: 0;
+display: block;
+}
+
+#icon-button {
+font-size: 25px;
+color: #ffffff;
+}
