@@ -1,23 +1,5 @@
 
 
-
-.MainPage {
-    height: 100vh;
-    width: 100vh;
-    background-color: black;
-    padding: 0;
-    margin: auto;
-}
-
-#renderDiv {
-    font-size: 200%;
-    
-}
-
-.renderMainRow {
-    background-color: rgb(49, 49, 49);
-}
-
-.renderMainCol {
-    width: auto;
+.mainpageBody {
+    background-image: url('https://previews.dropbox.com/p/thumb/ACREDv77xzE_KN1zre1iSDN4h94wN8nZDGORcPGFm4pLI6fxc2SfqbcVbTlVoBr29a0GE5mGnplAoZTfLQ6GujAaXz6WInJpwW4ubEHR9W_zMmq7Z5esSTo_-oaBn_uvwWIoXSDOOPl2HYGzk59qE9IZ7KCjZUux3q-xrM_6RO9JU2CZvRtXWNMJ21RGwFImyOHcykp-uAYCbadrN8kEoNGTGtEYjskiLxQbFu2NRwWqu1qUNOHJ29D1i4NjnwjhWiwrb31YdsIX24PgLm0rf0vCGC5B3sZscH0FYccY3DkPsLvALvNdsNe3nSknjZ7a2vOIQn7iBI6Tlaa_J8-u5ZYQ/p.jpeg');
 }
