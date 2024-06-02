@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react';
+import { Link } from 'react-router-dom';
 import {Row, Col, Container, Image, Nav, NavItem, NavLink, Navbar} from 'react-bootstrap';
 import '../CSS/mainpage.css';
-import '../CSS/NavBar.css'
+import '../CSS/NavBar.css';
 import { Logo_url } from '../utils/constants';
 import NavBar from '../Landing/NavBar';
-import { getParsedCommandLineOfConfigFile } from 'typescript';
+import Body from '../Landing/Body';
 
 interface Props {
 
@@ -24,33 +25,17 @@ constructor(props: any) {
 
     }
 }
-// renderNavBar = () => {
-
-    
-    
-//     return (
-//         <Container>
-//             <div style={{padding:0, top:0, margin:0, minHeight:54}}>
-//             <NavBar/>
-//             </div>
-//         </Container>
-//     )
-// }
 
 
     render () {
         return(
-        <div className="MainPage">
-        <Image
-        style={{}}
-        height={300}
-        width={300}
-        src={Logo_url}
-
-        roundedCircle
-        />
-        {/* {this.renderNavBar()} */}
-        <NavBar/>
+        <div className="" style={{height:'100vh', padding:0}}>
+        <div style={{}}>
+            <NavBar/>
+        </div>
+        <div className="mainpageBody">
+            <Body/>
+        </div>
         </div>
         )
     }
