@@ -1,0 +1,57 @@
+/* .BodyDiv {
+    height: 1000;
+    width: 1000;
+} */
+#DivOne {
+    margin: auto;
+    border: 2px;
+    padding:10px;
+    position: relative;
+    width: 90%;
+    display: block;
+
+}
+
+#DivOne::before,
+#DivOne::after {
+    display: block;
+    border-color: black;
+    content:'';
+    position: absolute;
+    z-index: 1;
+    border-width: 2px;
+    left:10px;
+    width: 50%;
+    height: 100%;
+    max-width: 300px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+}
+
+#DivOne::after {
+    right: 10px;
+    left:auto;
+}
+
+.SubDiv1 {
+    color: black;
+    padding: -10%;
+}
+
+.SubDiv2 {
+    padding: -10%;
+    color: black;
+}
+
+
+
+.BodyImage1 {
+    border-radius: 50%;
+
+}
+
+
+.BodyContainer {
+    background-color:'orange';
+    border-width:'10px';
+    border-color:'black';
+}

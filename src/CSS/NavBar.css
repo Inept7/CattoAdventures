@@ -1,38 +1,58 @@
 #NavBarDiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    height: var(--header-height);
-    margin: 1rem;
+    top:0;
+    display: block;
+    position: fixed;
     background-color: rgb(70, 69, 69);
-    position: relative;
-    min-height: 54px;
-    font-size: 150%;
+    text-decoration: none;
+    overflow: auto;
+    background: linear-gradient(to bottom, 0%, 17%, 33%, 67%, 83, 100%);
+    z-index:99;
+    height:'10vh';
+    width:'100vw';
 }
+
+#TriggerOne {
+    margin:auto;
+}
+
+#TriggerTwo {
+    margin:auto;
+}
+
+#TriggerThree {
+    margin:auto;
+}
+
 
 #NavItem1 {
 color: white;
-padding:0;
-width: 200px;
-margin: 10px;
-/* color: rgb(178, 211, 44); */
+/* width: 50px; */
+
+color: rgb(178, 211, 44);
 }
 
 #NavItem2 {
 color: white;
-width: 200px;
-margin: auto;
+/* width: 50px; */
+
 }
 
 #NavItem3 {
-padding-left: 400px;
-margin: 0;
-padding-right: 0;
 color: white;
-width: 200px;
-
+/* width: 50px; */
 }
+
+#NavItem4 {
+    color: white;
+    /* width: 50px; */
+    }
+
+    #NavItem5 {
+        color: white;
+        /* width: 50px; */
+        }
+
+
 
 #icon-button {
 font-size: 25px;
