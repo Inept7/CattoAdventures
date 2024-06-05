@@ -38,6 +38,10 @@ class SocialMedia extends Component<Props, State> {
                 <div style={{padding:'50px', float:'inherit'}}>
                 don't forget to visit our instagram page, all just for fun and beauty.
                     <br/>
+                    We accept all non-aggressive dogs for our regular walking services.
+                    Our effort to keep your mind at ease is second to none as we help keep up your loved ones' exercise levels up.
+                    The goal is to help make sure your loving family member is happy and healthy for longer years to come.
+                    <br/>
                         <Linkify>
                             https://www.instagram.com/c.adventuresbc/
                         </Linkify>
