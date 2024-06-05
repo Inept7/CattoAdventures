@@ -1,18 +1,34 @@
-/* .BodyDiv {
-    height: 1000;
-    width: 1000;
-} */
+
 #DivOne {
-    margin: auto;
     border: 2px;
     padding:10px;
-    position: relative;
-    width: 90%;
+    width: 30%;
     display: block;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
 
 }
 
-#DivOne::before,
+#DivOne::after {
+    right: 10px;
+    left:auto;
+}
+
+#DivTwo {
+    border: 2px;
+    padding:10px;
+    width: 30%;
+    display: block;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+
+}
+
+#DivOne::after {
+    left: 10px;
+    right:auto;
+}
+
+
+/* #DivOne::before,
 #DivOne::after {
     display: block;
     border-color: black;
@@ -25,12 +41,7 @@
     height: 100%;
     max-width: 300px;
     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-}
-
-#DivOne::after {
-    right: 10px;
-    left:auto;
-}
+} */
 
 .SubDiv1 {
     color: black;
@@ -51,7 +62,36 @@
 
 
 .BodyContainer {
-    background-color:'orange';
     border-width:'10px';
     border-color:'black';
+}
+
+.soloWalkImage {
+    /* display: block;
+    border-color: black;
+    content:'';
+    position: absolute;
+    z-index: 1;
+    border-width: 2px;
+    left:10px;
+    width: 50%;
+    height: 100%;
+    max-width: 300px; */
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);;
+}
+
+.openerImageDiv {
+    filter: brightness(50%);
+    
+}
+
+.CattoAdventures {
+    color:burlywood;
+    font-size: 50px;
+    font-family: monospace;
+    margin-left: 250px;
+}
+
+.logoNameImage {
+    max-width: 100%;
 }

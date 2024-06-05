@@ -1,9 +1,10 @@
-import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import { faRightToBracket, faClipboardCheck, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, {Component, useState} from 'react';
 import {Container, Row, Col, Image, Carousel, CarouselItem, CarouselCaption } from 'react-bootstrap';
 import Services from '../Nav Components/Services';
 import About from '../Nav Components/About';
-import {trail_hikes_url, walking_service_url, Background_url, carousel_five, carousel_four, carousel_three, carousel_two, carousel_one, Logo_url, solo_walks_url} from '../utils/constants';
+import {trail_hikes_url, walking_service_url, Background_url, Logo_url, solo_walks_url, healthy_living, opener_image, untitled_logo, rainNshine} from '../utils/constants';
 import SocialMedia from '../Nav Components/Services';
 import '../CSS/Body.css';
 
@@ -36,7 +37,7 @@ class Body extends Component<Props, State> {
 
         return(
             <div className="d-inline" style={{margin:'auto', overflow:'auto', padding:'50px'}}>
-            <Carousel className='carousel' wrap={true} slide={true} interval={10000} style={{width:'100%', height:'100%', borderColor:'#8C4F32', borderStyle:'groove', borderWidth:'10px', fontSize:'23px', fontWeight:'bold'}}>
+            {/* <Carousel className='carousel' wrap={true} slide={true} interval={10000} style={{width:'100%', height:'100%', borderColor:'#8C4F32', borderStyle:'groove', borderWidth:'10px', fontSize:'23px', fontWeight:'bold'}}>
                     <CarouselItem >
                     <Image
                     height={'500px'}
@@ -93,7 +94,7 @@ class Body extends Component<Props, State> {
                         Natural Play Areas
                     </CarouselCaption>
                     </CarouselItem>
-                </Carousel>
+                </Carousel> */}
                 </div>
             )
 }
@@ -103,74 +104,100 @@ class Body extends Component<Props, State> {
         
         return(
             <Container className="BodyContainer">
-            <div className='col-12' style={{margin:'auto', backgroundColor:"#FEFEFE", borderStyle:'solid', borderColor:'black', width:'100vw'}}>
-                <div style={{margin:'auto', height:'500px', paddingTop:'80px' }}>
+            <div className='col-12' style={{backgroundColor:"#FEFEFE", borderStyle:'solid', borderColor:'black', display:'inline-block'}}>
+                <div className="" style={{height:'100%', width:'100%', paddingTop:'10px' }}>
                 {/* {this.renderCarousel()} */}
+                <div className='openerImageDiv' style={{marginTop:'70px', width:'100%'}}>
                 <Image
-                height={'100%'}
+                height={'200px'}
                 width={'100%'}
-                src={carousel_two}
+                src={untitled_logo}
                 />
                 </div>
-                <div className='' style={{padding:'100px', height:'100%', width:'100%'}}>
-                    <div style={{fontSize:'3rem', fontFamily:'New Century Schoolbook, TeX Gyre Schola, serif', fontStyle:'oblique', margin:'auto', color:'black', marginBottom:'150px', display:'inline-block'   }}>Big Or Small, We Take Them All!</div>
-                    <div id="DivOne" style={{padding:'20px'}}>
-                        <h3><b>We Are Insured!</b></h3>
-                        <Image
-                        height={50}
-                        width={50}
-                        src={''}/>
-                    <div style={{height:'300px', width:'300px'}}></div>
-                    
-                    </div>
-                    <div style={{float:'right', paddingRight:'5%', margin:'50px'}}>
-                    <h3><b>Plan a Meet & Greet</b></h3>
-                    <Image
-                    height={50}
-                    width={50}
-                    src={''}/>
-                        </div>
-                    <div id="ServicesLink" style={{textWrap:'pretty', fontSize:'20px', display:'inline-block', marginTop:'150px'}}>
-                        <div style={{margin:'auto', paddingTop:'100px', display:'inline-block'}}>
-                            <b>
-                        Dog Walking Services
-                            </b>
-                        </div>
-                        <div style={{float:'right', paddingRight:'100px'}}>
-                            We accept all non-aggressive dogs for our regular walking services.
-                            Our effort to keep your mind at ease is second to none as we help keep up your loved ones' exercise levels up.
-                            The goal is to help make sure your loving family member is happy and healthy for longer years to come.
-                        </div>
-                    </div>
                 </div>
-                        <div className="" style={{padding:'100px', height:'100%', overflow:'auto'}}>
-                        <div style={{float:'right'}}>
+                <div className='logoNameImage' style={{}}>
+                <Image
+                height={'500px'}
+                width={'100%'}
+                src={opener_image}
+                    />
+                </div>
+                
+                    <div style={{fontSize:'3rem', fontFamily:'Montserrat, Helvetica, Arial, Lucida, sans-serif', fontStyle:'oblique', textAlign:'center', color:'black', margin:'10%' }}>
+                        Big Or Small, We Take Them All!
+                    </div>
+                    <div id="DivOne" style={{ display:'inline-block', textAlign:'center', marginRight:'20%'}}>
+                        <h3><b>We Are Insured!</b></h3>
+                        <div style={{}}>
+                        <FontAwesomeIcon icon={faClipboardCheck} size={'10x'}/>
+                        </div>
+                        <div style={{display:'inline-block', paddingTop:'10%'}}>
+                        <p><b>rest easy knowing that you and your best friend are taken care of</b></p>
+                        </div>
+                    </div>
+                
+                    <div id="DivTwo" style={{display:'inline-block', textAlign:'center', marginLeft:'20%'}}>
+                    <h3><b>Plan a Meet & Greet</b></h3>
+                    <div style={{}}>
+                    <FontAwesomeIcon icon={faHandshake} size={'10x'}/>
+                    </div>
+                    <div style={{display:'inline-block', paddingTop:'10%'}}>
+                        <p><b>Plan a Meetup to discuss what would be the best for you and for your Best Friend</b></p>
+                    </div>
+                        </div>
+                    <div id="ServicesLink" style={{textWrap:'pretty', fontSize:'20px', display:'inline-block', marginTop:'150px', marginBottom:0}}>
+                    <div className="soloWalkImage" style={{float:'right'}}>
+                            <Image 
+                            height={350}
+                            width={450}
+                            src={healthy_living}/>
+                            </div>
+                        <div style={{display:'inline-block'}}>
+                            <div style={{paddingTop:'50px'}}>
+                            <b>
+                        Keeping your Best Friend Healthy!
+                            </b>
+                            </div>
+                            
+                        
+                        <div style={{float:'right', paddingRight:'100px', paddingTop:'2%'}}>
+                            Everyone knows sometimes its difficult to make sure our Best Friends get enough exercise during the week.
+                            Thats where we can help! from once a week to once a day, we can work with you to make sure our friends get the exercise they need
+                            and make sure they live a longer happy and healthy life!
+                        </div>
+                    </div>
+                    </div>
+                
+                        <div className="" style={{padding:'100px', height:'100%'}}>
+                        <div className="soloWalkImage" style={{float:'right'}}>
                         <Image
-                        height={350}
+                        height={450}
                         width={450}
-                        src={trail_hikes_url}
+                        src={rainNshine}
                         />
                         </div>
-                        <div style={{float:'right'}}>
-                            <div style={{float:'right'}}>
+                        <div style={{float:'right', display:'inline-block', padding:'10px', fontSize:'20px'}}>
+                            <div style={{float:'right', margin:'auto', padding:'20px'}}>
                             <b>
-                                Trail Hikes
+                                We Are There Rain or Shine!
                             </b>
                         </div>
-                        <div  className="" style={{padding:'50px', float:'right'}}>The trails we use are back mountain trails outside of the city to give your loved one a greater experience and longer exposure to nature.
-                            These trails are all dog friendly, vetted and tested by Catto Adventures to ensure safety for your loved ones.
+                        <div  className="" style={{float:'right'}}>
+                            No matter the weather we keep ourselves prepared to keep your Best Friend healthy. Rain or Shine we enjoy the time we spend making sure
+                            these walks are given to ensure happy days! even when it looks a bit dreadful.. 
                             <br/>
                             <br/>
-                            depending on tested recall ability we will recommend on/off leash trail hiking abilites and can discuss further on trial basis for better safety of each loved one.
+                            
                         </div>
-                            <div style={{padding:'50px'}}>
+                            <div style={{display:'inline-block', marginTop:'20%'}}>
                                 <b>
-                                    Solo Walks
+                                Is your Buddy stressed out in crowds or around others? 
                                 </b>
-                                <div>
-                                    these solo walks are built to be centered around dogs with special needs such as; High Anxiety, Social Fear, and Puppy Isolation for the very young. We always encourage to keep dogs social and friendly to others.
+                                <div style={{paddingTop:'20px'}}>
+                                    We have created walk plans custom to your Best Friends' special requirements, don't forget to mention their special requirements to us
+                                    for the best possible plan.
                                 </div>
-                                <div style={{padding:'50px'}}>
+                                <div className="soloWalkImage" style={{width:'40%', marginTop:'5%'}}>
                                 <Image
                                 style={{}}
                                 width={'350px'}
