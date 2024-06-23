@@ -14,6 +14,7 @@ import SocialMedia from './Nav Components/Services';
 const BaseRouter: React.FC = () => {
   return (
     <BrowserRouter>
+    <meta name="viewport" content='width=device-width, initial-scale=1.0'>
       <div style={{ backgroundColor: '#252421', padding: 0, overflow: 'hidden' }}>
         <Routes>
           <Route path="/" element={<MainPage/>} />
@@ -24,6 +25,7 @@ const BaseRouter: React.FC = () => {
           <Route path="/Services" element={<Services/>}/>
         </Routes>
       </div>
+      </meta>
     </BrowserRouter>
   );
 };

@@ -23,38 +23,33 @@
     margin:auto;
 }
 
-
-#NavItem1 {
-color: white;
-/* width: 50px; */
-
-color: rgb(178, 211, 44);
+a:link {
+    color:black;
 }
 
-#NavItem2 {
-color: white;
-/* width: 50px; */
 
-}
-
-#NavItem3 {
+#NavItem {
 color: white;
 /* width: 50px; */
 }
-
-#NavItem4 {
-    color: white;
-    /* width: 50px; */
-    }
-
-    #NavItem5 {
-        color: white;
-        /* width: 50px; */
-        }
-
 
 
 #icon-button {
 font-size: 25px;
 color: #ffffff;
 }
+
+.modal {
+    margin:'auto';
+    /* background-color: white;
+    opacity: 1; */
+}
+
+#sidebar-left {
+    display: block !important;
+    max-width: 200px;
+    top:0;
+    left:0;
+    position:fixed;
+}
+
