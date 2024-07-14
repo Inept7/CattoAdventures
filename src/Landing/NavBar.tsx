@@ -62,7 +62,7 @@ render() {
             <OverlayTrigger 
             key="bottom" 
             placement='bottom'
-            overlay={<Tooltip id='tooltip-bottom'>Nav 1</Tooltip>}>
+            overlay={<Tooltip id='tooltip-bottom'>Nav 2</Tooltip>}>
                 <NavLink href="/AboutUs" id="NavItem" style={{}}>
                     About Us
                     
@@ -75,7 +75,7 @@ render() {
             <OverlayTrigger
             key='bottom'
             placement='bottom'
-            overlay={<Tooltip id='tooltip-bottom'>Nav 2</Tooltip>}>
+            overlay={<Tooltip id='tooltip-bottom'>Nav 3</Tooltip>}>
                 <NavLink href="/Services" id="NavItem" style={{}}>
                     Services
                     
@@ -88,15 +88,15 @@ render() {
                 <OverlayTrigger
             key='bottom'
             placement='bottom'
-            overlay={<Tooltip id='tooltip-bottom'>Nav 3</Tooltip>}>
+            overlay={<Tooltip id='tooltip-bottom'>Nav 4</Tooltip>}>
                 <NavLink href="/" id="NavItem" style={{}}>
-                    Social Media
+                    Social Media <span style={{fontSize:'50%'}}>(coming soon)</span>
                     
                 </NavLink>
                 </OverlayTrigger>
                 </Row>
                 </Col>
-                <Col style={{marginTop:'auto'}}>
+                {/* <Col style={{marginTop:'auto'}}>
                 <div className='' style={{float: 'right', marginTop:'auto'}}>
                 <OverlayTrigger
             key='bottom'
@@ -108,6 +108,12 @@ render() {
                 </NavLink>
                 </OverlayTrigger>
                 </div>
+            </Col> */}
+            <Col>
+            <div style={{float:'right', margin:'5%', color:'white', fontSize:'50%'}}>
+                <h4>Contact us!</h4>
+                <p>call or text 604-832-5723</p>
+            </div>
             </Col>
             </Row>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import './Landing/NavBar';
 import MainPage from './Landing/mainpage';
 import AboutAdventures from './Nav Components/About';
 import Services from './Nav Components/Services';
