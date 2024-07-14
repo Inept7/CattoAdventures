@@ -5,6 +5,7 @@
     width: 30%;
     display: block;
     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    background-color: rgb(245, 216, 201);
 
 }
 
@@ -19,13 +20,10 @@
     width: 30%;
     display: block;
     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    background-color: rgb(245, 216, 201);
 
 }
 
-#DivOne::after {
-    left: 10px;
-    right:auto;
-}
 
 
 /* #DivOne::before,
@@ -64,6 +62,7 @@
 .BodyContainer {
     border-width:'10px';
     border-color:'black';
+    background-color: rgb(201, 191, 173)
 }
 
 .soloWalkImage {
