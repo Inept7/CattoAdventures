@@ -5,7 +5,7 @@ import AboutAdventures from './Nav Components/About';
 import Services from './Nav Components/Services';
 import Contact from './Nav Components/ContactUs';
 import Body from './Landing/Body';
-import SocialMedia from './Nav Components/Services';
+import SocialMedia from './Nav Components/ContactUs';
 
 // const { resolve } = require('path');
 
@@ -14,7 +14,6 @@ import SocialMedia from './Nav Components/Services';
 const BaseRouter: React.FC = () => {
   return (
     <BrowserRouter>
-    <meta name="viewport" content='width=device-width, initial-scale=1.0'>
       <div style={{ backgroundColor: '#252421', padding: 0, overflow: 'hidden' }}>
         <Routes>
           <Route path="/" element={<MainPage/>} />
@@ -25,7 +24,6 @@ const BaseRouter: React.FC = () => {
           <Route path="/Services" element={<Services/>}/>
         </Routes>
       </div>
-      </meta>
     </BrowserRouter>
   );
 };

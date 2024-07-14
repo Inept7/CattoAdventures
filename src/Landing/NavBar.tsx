@@ -7,7 +7,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowLeft, faChartBar, faInfoCircle, faDog, faGripLines } from '@fortawesome/free-solid-svg-icons';
 import { Logo_url } from '../utils/constants';
 import '../CSS/NavBar.css';
-import NavBarMini from './NavBarMini';
 
 interface Props {
 
@@ -64,7 +63,7 @@ render() {
             key="bottom" 
             placement='bottom'
             overlay={<Tooltip id='tooltip-bottom'>Nav 1</Tooltip>}>
-                <NavLink href="/About#AboutUsLink" id="NavItem" style={{}}>
+                <NavLink href="/AboutUs" id="NavItem" style={{}}>
                     About Us
                     
                 </NavLink>
