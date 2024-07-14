@@ -1,11 +1,9 @@
-import { faRightToBracket, faClipboardCheck, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { faRightToBracket, faClipboardCheck, faHandshake, faFaceLaughBeam } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, {Component, useState} from 'react';
 import {Container, Row, Col, Image, Carousel, CarouselItem, CarouselCaption } from 'react-bootstrap';
-import Services from '../Nav Components/Services';
-import About from '../Nav Components/About';
-import {trail_hikes_url, walking_service_url, Background_url, Logo_url, solo_walks_url, healthy_living, opener_image, untitled_logo, rainNshine} from '../utils/constants';
 import SocialMedia from '../Nav Components/Services';
+import {trail_hikes_url, walking_service_url, Background_url, Logo_url, solo_walks_url, healthy_living, opener_image, untitled_logo, rainNshine} from '../utils/constants';
 import '../CSS/Body.css';
 
 interface Props {
@@ -103,53 +101,66 @@ class Body extends Component<Props, State> {
     render() {
         
         return(
-            <Container className="BodyContainer">
+            <Container className="BodyContainer" style={{ display:'block'}}>
             <div className='col-12' style={{backgroundColor:"#FEFEFE", borderStyle:'solid', borderColor:'black', display:'inline-block'}}>
                 <div className="" style={{height:'100%', width:'100%', paddingTop:'10px' }}>
                 {/* {this.renderCarousel()} */}
-                <div className='openerImageDiv' style={{marginTop:'70px', width:'100%'}}>
+                <div className='openerImageDiv' style={{marginTop:'70px', width:'100%', height:'50%', display:'inline-block'}}>
                 <Image
-                height={'200px'}
+                height={'100%'}
                 width={'100%'}
                 src={untitled_logo}
                 />
                 </div>
                 </div>
-                <div className='logoNameImage' style={{}}>
+                <div className='logoNameImage' style={{width:'100%', height:'50%', display:'inline-block'}}>
                 <Image
-                height={'500px'}
+                height={'100%'}
                 width={'100%'}
                 src={opener_image}
                     />
                 </div>
                 
-                    <div style={{fontSize:'3rem', fontFamily:'Montserrat, Helvetica, Arial, Lucida, sans-serif', fontStyle:'oblique', textAlign:'center', color:'black', margin:'10%' }}>
+                    <div style={{fontSize:'3rem', fontStyle:'normal', fontFamily:'serif', textAlign:'center', color:'black', margin:'5%' }}>
                         Big Or Small, We Take Them All!
                     </div>
-                    <div id="DivOne" style={{ display:'inline-block', textAlign:'center', marginRight:'20%'}}>
+                    <div className="wrapperDiv" style={{width:"100%"}}>
+                    <div style={{width:"100%"}}>
+                    <div id="DivOne" style={{width:'30%', display:'inline-block', textAlign:'center', marginRight:'5%'}}>
                         <h3><b>We Are Insured!</b></h3>
+                        <br/>
                         <div style={{}}>
-                        <FontAwesomeIcon icon={faClipboardCheck} size={'10x'}/>
+                        <FontAwesomeIcon className="styleIcon" icon={faClipboardCheck}/>
                         </div>
-                        <div style={{display:'inline-block', paddingTop:'10%'}}>
+                        <div style={{display:'block', paddingTop:'10%'}}>
                         <p><b>rest easy knowing that you and your best friend are taken care of</b></p>
                         </div>
                     </div>
-                
-                    <div id="DivTwo" style={{display:'inline-block', textAlign:'center', marginLeft:'20%'}}>
+                    <div id="DivTwo" style={{width:'30%', display:'inline-block', textAlign:'center'}}>
+                    <h3><b>Fun Times!</b></h3>
+                    <div style={{}}>
+                    <FontAwesomeIcon className="styleIcon" icon={faFaceLaughBeam}/>
+                    </div>
+                    <div style={{display:'inline-block', paddingTop:'10%'}}>
+                        <p><b>All our walks are fun for everyone! being out in nature is our guilty pleasure, so let us keep you guilt free. </b></p>
+                    </div>
+                    </div>
+                    <div id="DivTwo" style={{width:'30%', display:'inline-block', textAlign:'center', float:'right'}}>
                     <h3><b>Plan a Meet & Greet</b></h3>
                     <div style={{}}>
-                    <FontAwesomeIcon icon={faHandshake} size={'10x'}/>
+                    <FontAwesomeIcon className="styleIcon" icon={faHandshake}/>
                     </div>
                     <div style={{display:'inline-block', paddingTop:'10%'}}>
                         <p><b>Plan a Meetup to discuss what would be the best for you and for your Best Friend</b></p>
                     </div>
-                        </div>
+                    </div>
+                    </div>
+                    </div>
                     <div id="ServicesLink" style={{textWrap:'pretty', fontSize:'20px', display:'inline-block', marginTop:'150px', marginBottom:0}}>
-                    <div className="soloWalkImage" style={{float:'right'}}>
+                    <div className="soloWalkImage" style={{float:'right', width:'50%'}}>
                             <Image 
-                            height={350}
-                            width={450}
+                            height={'100%'}
+                            width={'100%'}
                             src={healthy_living}/>
                             </div>
                         <div style={{display:'inline-block'}}>
@@ -168,11 +179,11 @@ class Body extends Component<Props, State> {
                     </div>
                     </div>
                 
-                        <div className="" style={{padding:'100px', height:'100%'}}>
-                        <div className="soloWalkImage" style={{float:'right'}}>
+                        <div className="" style={{padding:'100px', height:'100%', width:'100%'}}>
+                        <div className="soloWalkImage" style={{display:'block', float:'right', width:'70%'}}>
                         <Image
-                        height={450}
-                        width={450}
+                        height={'100%'}
+                        width={'100%'}
                         src={rainNshine}
                         />
                         </div>
@@ -197,11 +208,11 @@ class Body extends Component<Props, State> {
                                     We have created walk plans custom to your Best Friends' special requirements, don't forget to mention their special requirements to us
                                     for the best possible plan.
                                 </div>
-                                <div className="soloWalkImage" style={{width:'40%', marginTop:'5%'}}>
+                                <div className="soloWalkImage" style={{width:'50%', marginTop:'5%', marginBottom:'5%'}}>
                                 <Image
                                 style={{}}
-                                width={'350px'}
-                                height={'450px'}
+                                width={'100%'}
+                                height={'80%'}
                                 src={solo_walks_url}
                                 />
                                 </div>
@@ -210,6 +221,13 @@ class Body extends Component<Props, State> {
                 </div>
                 <div className="d-block" style={{height:'100%', padding:'50px'}}>
                         </div>
+                        <div style={{display:'inline-block'}}>
+                    <h2>
+                        Contact us!
+                    </h2>
+                    <p>call or text 604-832-5723</p>
+                    <p>If we cannot answer the call right away, please leave a message for us to get back to you!</p>
+                </div>
             </div>
             </Container>
         )
