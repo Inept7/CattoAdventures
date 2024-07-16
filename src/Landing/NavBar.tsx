@@ -131,7 +131,8 @@ render() {
         window.location.reload();}}
         > 
         <ModalHeader>
-        Take an Adventure
+            <div style={{padding:'10px'}}><b>Contact Us!</b></div>
+        <div>call or text 604-832-5723</div>
         </ModalHeader>
         <ModalBody className="modalBody">
             <a href={'/'} style={{color:'black'}}>Home</a>
@@ -140,7 +141,7 @@ render() {
             <br/>
             <a href={'/Services'} style={{color:'black'}}>Services</a>
             <br/>
-            <a href={'/Contact'} style={{color:'black'}}>Contact Us</a>
+            {/* <a href={'/Contact'} style={{color:'black'}}>Contact Us</a> */}
         </ModalBody>
         </Modal>
         </div>
