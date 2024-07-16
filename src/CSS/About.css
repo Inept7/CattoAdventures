@@ -1,6 +1,7 @@
 
 
-
-.aboutContainer {
-    padding-top: 10%;
+.BodyContainer {
+    border-width:'10px';
+    border-color:'black';
+    background-color: rgb(201, 191, 173)
 }

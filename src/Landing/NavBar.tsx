@@ -7,7 +7,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowLeft, faChartBar, faInfoCircle, faDog, faGripLines } from '@fortawesome/free-solid-svg-icons';
 import { Logo_url } from '../utils/constants';
 import '../CSS/NavBar.css';
-import NavBarMini from './NavBarMini';
+import Services from '../Nav Components/Services';
+import { isDisabled } from '@testing-library/user-event/dist/utils';
 
 interface Props {
 
@@ -33,9 +34,9 @@ class NavBar extends Component<Props, State> {
 
 render() {
     return window.innerWidth > 770 ? (
-        <div id="NavBarDiv" className='navbar-expand-lg' style={{}}>
+        <div id="NavBarDiv" className='navbar-expand-lg' style={{margin:'auto'}}>
             <Row style={{}}>
-                <Col className="NavCol" style={{height:'10vh', width:'100vw', margin:'auto'}}>
+                <Col className="NavCol" style={{ margin:'auto'}}>
                     <Row id="ImageRow" style={{overflow:'auto', paddingLeft:'10px', width:'45%'}}>
                 <Image
                 width={"100%"}
@@ -45,12 +46,12 @@ render() {
                 />
                 </Row>
                 </Col>
-                <Col style={{marginTop:'auto'}}>
+                <Col style={{margin:'auto'}}>
                 <Row id="TriggerOne">
             <OverlayTrigger 
             key="bottom" 
             placement='bottom'
-            overlay={<Tooltip id='tooltip-bottom'>Nav 1</Tooltip>}>
+            overlay={<Tooltip id='tooltip-bottom'>Take me home</Tooltip>}>
                 <NavLink href="/" id="NavItem" style={{}}>
                     Home
                     
@@ -58,25 +59,25 @@ render() {
             </OverlayTrigger>
             </Row>
             </Col>
-                <Col style={{marginTop:'auto'}}>
+                <Col style={{margin:'auto'}}>
                 <Row id="TriggerOne">
             <OverlayTrigger 
             key="bottom" 
             placement='bottom'
-            overlay={<Tooltip id='tooltip-bottom'>Nav 1</Tooltip>}>
-                <NavLink href="/About#AboutUsLink" id="NavItem" style={{}}>
+            overlay={<Tooltip id='tooltip-bottom'>What we're all about!</Tooltip>}>
+                <NavLink href="/AboutUs" id="NavItem" style={{}}>
                     About Us
                     
                 </NavLink>
             </OverlayTrigger>
             </Row>
             </Col>
-            <Col style={{marginTop:'auto'}}>
+            <Col style={{margin:'auto', display:'flex'}}>
             <Row id="TriggerTwo">
             <OverlayTrigger
             key='bottom'
             placement='bottom'
-            overlay={<Tooltip id='tooltip-bottom'>Nav 2</Tooltip>}>
+            overlay={<Tooltip id='tooltip-bottom'>What can we do for you?</Tooltip>}>
                 <NavLink href="/Services" id="NavItem" style={{}}>
                     Services
                     
@@ -84,20 +85,20 @@ render() {
                 </OverlayTrigger>
                 </Row>
                 </Col>
-                <Col style={{marginTop:'auto'}}>
+                <Col style={{margin:'auto', display:'inline-block'}}>
                 <Row id="TriggerThree">
                 <OverlayTrigger
             key='bottom'
             placement='bottom'
-            overlay={<Tooltip id='tooltip-bottom'>Nav 3</Tooltip>}>
-                <NavLink href="/" id="NavItem" style={{}}>
-                    Social Media
+            overlay={<Tooltip id='tooltip-bottom'>Coming Soon</Tooltip>}>
+                <NavLink eventKey="disabled" href="/" id="NavItem" style={{}}>
+                    Social Media <span style={{fontSize:'50%'}}>(coming soon)</span>
                     
                 </NavLink>
                 </OverlayTrigger>
                 </Row>
                 </Col>
-                <Col style={{marginTop:'auto'}}>
+                {/* <Col style={{marginTop:'auto'}}>
                 <div className='' style={{float: 'right', marginTop:'auto'}}>
                 <OverlayTrigger
             key='bottom'
@@ -109,6 +110,12 @@ render() {
                 </NavLink>
                 </OverlayTrigger>
                 </div>
+            </Col> */}
+            <Col>
+            <div style={{marginTop:'10%', marginRight:'auto', color:'white', fontSize:'50%'}}>
+                <div style={{height:'60%'}}><h5>Contact us!</h5></div>
+                <p>call or text 604-832-5723</p>
+            </div>
             </Col>
             </Row>
         </div>

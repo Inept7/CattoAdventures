@@ -121,7 +121,7 @@ class Body extends Component<Props, State> {
                     />
                 </div>
                 
-                    <div style={{fontSize:'3rem', fontStyle:'normal', fontFamily:'serif', textAlign:'center', color:'black', margin:'5%' }}>
+                    <div style={{fontSize:'2rem', fontWeight:'bold', textAlign:'center', color:'black', margin:'5%' }}>
                         Big Or Small, We Take Them All!
                     </div>
                     <div className="wrapperDiv" style={{width:"100%"}}>
@@ -130,7 +130,7 @@ class Body extends Component<Props, State> {
                         <h3><b>We Are Insured!</b></h3>
                         <br/>
                         <div style={{}}>
-                        <FontAwesomeIcon className="styleIcon" icon={faClipboardCheck}/>
+                        <FontAwesomeIcon className="styleIcon fa-2xl" icon={faClipboardCheck}/>
                         </div>
                         <div style={{display:'block', paddingTop:'10%'}}>
                         <p><b>rest easy knowing that you and your best friend are taken care of</b></p>
@@ -139,7 +139,7 @@ class Body extends Component<Props, State> {
                     <div id="DivTwo" style={{width:'30%', display:'inline-block', textAlign:'center'}}>
                     <h3><b>Fun Times!</b></h3>
                     <div style={{}}>
-                    <FontAwesomeIcon className="styleIcon" icon={faFaceLaughBeam}/>
+                    <FontAwesomeIcon className="styleIcon fa-2xl" icon={faFaceLaughBeam}/>
                     </div>
                     <div style={{display:'inline-block', paddingTop:'10%'}}>
                         <p><b>All our walks are fun for everyone! being out in nature is our guilty pleasure, so let us keep you guilt free. </b></p>
@@ -148,7 +148,7 @@ class Body extends Component<Props, State> {
                     <div id="DivTwo" style={{width:'30%', display:'inline-block', textAlign:'center', float:'right'}}>
                     <h3><b>Plan a Meet & Greet</b></h3>
                     <div style={{}}>
-                    <FontAwesomeIcon className="styleIcon" icon={faHandshake}/>
+                    <FontAwesomeIcon className="styleIcon fa-2xl" icon={faHandshake}/>
                     </div>
                     <div style={{display:'inline-block', paddingTop:'10%'}}>
                         <p><b>Plan a Meetup to discuss what would be the best for you and for your Best Friend</b></p>
