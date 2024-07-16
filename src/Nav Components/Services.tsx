@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Image } from 'react-bootstrap';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import { Logo_url, untitled_logo, carousel_three, checkins, Walks, medicineadmin, healthy_living, wutang } from '../utils/constants';
 import '../CSS/Services.css';
 
@@ -29,17 +30,22 @@ render() {
 
     return(
         <Container className="ServicesContainer" style={{ }}>
-            <div  style={{ padding:'10%' }}>
+            <div className='col-12' style={{backgroundColor:"#FEFEFE", borderStyle:'solid', borderColor:'black', display:'inline-block'}}>
+                <div className="" style={{height:'100%', width:'100%', paddingTop:'10px' }}>
+                {/* {this.renderCarousel()} */}
+                <div className='openerImageDiv' style={{marginTop:'70px', width:'100%', height:'50%', display:'inline-block'}}>
                 <Image
+                height={'100%'}
                 width={'100%'}
-                height={300}
                 src={untitled_logo}
                 />
-            </div>
+                </div>
+                </div>
             <div>
                 <div className='ServiceDiv1'>
                 Services You Need With The People You Can Trust
                 </div>
+                <br/>
                 <div className='SubDiv1'>
                     we offer a range of walk types from 30 min shuffles with Gladys's elderly Beagle to 
                     4 hour trail hikes with Sally's Aussie Cattle Dog who just needs to get that extra 
@@ -133,6 +139,7 @@ render() {
                             </div>
                         </div>
                     </div>
+            </div>
             </div>
         </Container>
     )

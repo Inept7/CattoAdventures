@@ -7,6 +7,7 @@ import '../CSS/NavBar.css';
 import { Logo_url } from '../utils/constants';
 import NavBar from '../Landing/NavBar';
 import Body from '../Landing/Body';
+import Services from '../Nav Components/Services';
 
 interface Props {
 
@@ -29,9 +30,8 @@ constructor(props: any) {
 
     render () {
         return(
-        <div className="" style={{height:'100vh', padding:0}}>
+        <div className="" style={{width:'100vw', padding:0}}>
         <div style={{}}>
-            <NavBar/>
         </div>
         <div className="mainpageBody">
             <Body/>
